@@ -52,25 +52,26 @@ function App() {
   return (
     <div className="App">
       <div className='card_countries' >
-        <h1 className='card_title'>Countries by Language | {languageCodes[inputValue]} </h1>
-        <h2>Number of Countries: {countries?.length} of 195 </h2>
-        <form className='card__form' onSubmit={handleSubmit}>
-          <input className='card__input'
-            id="countrylanguage"
-            type="text"
-            list="languageCodes"
-            value={inputValue}
-            onChange={(e) => setInputValue(e.target.value)}
-          />
-          <datalist id="languageCodes">
-            {Object.keys(languageCodes).map(code => (
-              <option key={code} value={code}>
-                {languageCodes[code]}
-              </option>
-            ))}
-          </datalist>
-          <button onClick={handleSubmit}>Search</button>
-        </form>
+        <div className='card__search'>
+          <h1 className='card_title'>Countries by Language | {languageCodes[inputValue]} </h1>
+          <h2>Number of Countries: {countries?.length} of 195 </h2>
+          <form className='card__form' onSubmit={handleSubmit}>
+            <input className='card__input'
+              id="countrylanguage"
+              type="text"
+              list="languageCodes"
+              value={inputValue}
+              onChange={(e) => setInputValue(e.target.value)}
+            />
+            <datalist id="languageCodes">
+              {Object.keys(languageCodes).map(code => (
+                <option key={code} value={code}>
+                  {languageCodes[code]}
+                </option>
+              ))}
+            </datalist>
+            <button onClick={handleSubmit}>Search</button>
+          </form></div>
 
         <div className="countries">
           {countries?.map((country) => (

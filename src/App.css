@@ -5,6 +5,10 @@
     padding: 2rem;
 }
 
+.card__search {
+    padding: 1rem;
+}
+
 .countries {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -22,7 +26,7 @@
 }
 
 .card__form button {
-    width: 180px;
+    width: 120px;
     height: 50px;
     border-radius: 1rem;
     font-size: 20px;
