@@ -71,19 +71,19 @@ function App() {
           </datalist>
           <button onClick={handleSubmit}>Search</button>
         </form>
-      </div>
-      <div className="countries">
-        {countries?.map((country) => (
-          <Country
-            country={country}
-            key={country.area}
-          />
-        ))}
-      </div>
-      <div className='footer'>
-        <h1><a href="#"><i class='bx bxs-chevron-up-circle gotohome'></i></a></h1>
-      </div>
-    </div >
+
+        <div className="countries">
+          {countries?.map((country) => (
+            <Country
+              country={country}
+              key={country.area}
+            />
+          ))}
+        </div>
+        <div className='footer'>
+          <h1><a href="#"><i class='bx bxs-chevron-up-circle gotohome'></i></a></h1>
+        </div>
+      </div ></div>
   )
 
 }
