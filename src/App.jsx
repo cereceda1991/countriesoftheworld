@@ -51,7 +51,7 @@ function App() {
 
   return (
     <div className="App">
-      <div >
+      <div className='card_countries' >
         <h1 className='card_title'>Countries by Language | {languageCodes[inputValue]} </h1>
         <h2>Number of Countries: {countries?.length} of 195 </h2>
         <form className='card__form' onSubmit={handleSubmit}>

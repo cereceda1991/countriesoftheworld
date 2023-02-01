@@ -45,12 +45,14 @@
 }
 
 @media (max-width: 700px) {
-    .App {
+    .card_countries {
         margin: auto;
+        background-color: green;
     }
 
     .countries {
         display: flex;
+        background-color: red;
         flex-direction: column;
         align-items: center;
     }
