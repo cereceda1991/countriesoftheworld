@@ -49,6 +49,16 @@
 }
 
 @media (max-width: 700px) {
+    .card__form {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+    }
+
+    .card__form button {
+        width: 100%;
+    }
+
 
     .countries {
         display: flex;
